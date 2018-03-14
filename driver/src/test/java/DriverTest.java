@@ -1,7 +1,6 @@
 import Vehicles.DodgemCar;
 import Vehicles.QuadBike;
 import Vehicles.TukTuk;
-import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -13,11 +12,6 @@ public class DriverTest {
     DodgemCar dodgemCar;
     QuadBike quadBike;
     TukTuk tukTuk;
-
-    @After
-    public void tearDown() throws Exception {
-
-    }
 
     @Before
     public void before() {
@@ -46,6 +40,7 @@ public class DriverTest {
     @Test
     public void canDriveDistance() {
         driver.setVehicle(tukTuk);
+        assertEquals(tukTuk, driver.getVehicle());
         assertEquals(1, driver.driveDistance(40));
     }
 
