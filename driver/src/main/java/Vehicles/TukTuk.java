@@ -1,6 +1,6 @@
 package Vehicles;
 
-public class TukTuk extends Vehicle {
+public class TukTuk extends Vehicle implements IDriveable {
 
     String colour;
 
@@ -11,6 +11,10 @@ public class TukTuk extends Vehicle {
 
     public String getColour() {
         return this.colour;
+    }
+
+    public int driveDistance(int distance) {
+        return distance / this.speed;
     }
 
 }

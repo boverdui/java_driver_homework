@@ -1,6 +1,6 @@
 package Vehicles;
 
-public class QuadBike extends Vehicle {
+public class QuadBike extends Vehicle implements IDriveable {
 
     int enginecapacity;
 
@@ -11,6 +11,10 @@ public class QuadBike extends Vehicle {
 
     public int getEngineCapacity() {
         return this.enginecapacity;
+    }
+
+    public int driveDistance(int distance) {
+        return distance / this.speed;
     }
 
 }

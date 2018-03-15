@@ -1,6 +1,6 @@
 package Vehicles;
 
-public abstract class Vehicle implements IDriveable {
+public abstract class Vehicle {
 
     int speed;
 
@@ -10,10 +10,6 @@ public abstract class Vehicle implements IDriveable {
 
     public int getSpeed() {
         return this.speed;
-    }
-
-    public int driveDistance(int distance) {
-        return distance / this.speed;
     }
 
 }

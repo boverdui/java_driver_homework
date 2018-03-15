@@ -1,6 +1,6 @@
 package Vehicles;
 
-public class DodgemCar extends Vehicle {
+public class DodgemCar extends Vehicle implements IDriveable {
 
     int seats;
 
@@ -11,6 +11,10 @@ public class DodgemCar extends Vehicle {
 
     public int getSeats() {
         return this.seats;
+    }
+
+    public int driveDistance(int distance) {
+        return distance / this.speed;
     }
 
 }
