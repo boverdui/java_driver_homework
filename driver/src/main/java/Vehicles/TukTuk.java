@@ -2,7 +2,7 @@ package Vehicles;
 
 public class TukTuk extends Vehicle implements IDriveable {
 
-    String colour;
+    private String colour;
 
     public TukTuk(int speed, String colour) {
         super(speed);

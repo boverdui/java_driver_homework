@@ -2,7 +2,7 @@ package Vehicles;
 
 public class DodgemCar extends Vehicle implements IDriveable {
 
-    int seats;
+    private int seats;
 
     public DodgemCar(int speed, int seats) {
         super(speed);

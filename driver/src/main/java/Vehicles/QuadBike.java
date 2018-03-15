@@ -2,7 +2,7 @@ package Vehicles;
 
 public class QuadBike extends Vehicle implements IDriveable {
 
-    int enginecapacity;
+    private int enginecapacity;
 
     public QuadBike(int speed, int enginecapacity) {
         super(speed);

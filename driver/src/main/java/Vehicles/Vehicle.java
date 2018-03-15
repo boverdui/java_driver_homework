@@ -2,7 +2,7 @@ package Vehicles;
 
 public abstract class Vehicle {
 
-    int speed;
+    protected int speed;
 
     public Vehicle(int speed) {
         this.speed = speed;
